@@ -181,7 +181,7 @@
         height: 1.0143rem;
         top: 16.5571rem;
         left: 0rem;
-        background: url("img/triangle.png");
+        background: url("/triangle.png");
         background-size: 100%; 
         z-index: 110;       
     }
@@ -200,7 +200,7 @@
         height: 1.2143rem;
         top: 1.3571rem;
         left: 1.6429rem;
-        background: url("img/icon_camera.png");
+        background: url("/icon_camera.png");
         background-size: 100%;
         z-index: 100;
     }
@@ -243,7 +243,7 @@
         width: 100%;
         height: 100%;
         border: none;
-        background: url("img/button_bg.png");
+        background: url("/button_bg.png");
         background-size: 100%;
     }
     
@@ -255,7 +255,7 @@
         height: 1.2143rem;
         top: 1rem;
         left: 9.2429rem;
-        background: url("img/icon_clock.png");
+        background: url("/icon_clock.png");
         background-size: 100%;
         z-index: 100;
     }
