@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>DD Chat</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=960">
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"> 
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="main.css">	
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="socket.io.js"></script>
+	<script src="chat_client.js"></script>
+</head>
+<body>
+	<div class="container">
+      <div class="chat">
+        <div class="chat__background"></div>
+	    <div class="chat__header">
+	     	<h1 class="chat__name">Тестовое задание</h1>
+	    </div>
+        <h1 class="chat__title">Chat</h1>
+    	<div class="chat__icon-wrap">
+    	    <div class="chat__icon"></div>
+        </div>
+    
+	    <div class="chat__content">
+        <div class="chat__content-clock"></div>
+        <div class="chat__content-time"></div>
+	      <div class="chat__content-people">
+	        <ul id="people"></ul>
+	      </div>
+	      <div class="chat__content-msg">
+	        <ul class="chat__content-list" id="msgs">
+	      </div>
+	    </div>
+	    
+	    <div class="chat__login" id="login">
+          <div class="chat__login-footer"></div>
+	        <form class="chat__login-form">
+              <label class="chat__login-label-username">
+                 username
+	             <input type="text" class="chat__login-form-name" placeholder="andrea@app.com" id="name">
+	          </label>
+	          <div class="chat__login-form-button">
+	             <input type="button" name="join" class="chat__login-button" id="join" value="Get Started">
+	          </div>
+	          <div class="chat__login-footer-triangle"></div>
+	        </form>
+	     </div>
+
+        <div class="chat__footer-bg">
+	      <div class="chat__msg" id="chat">
+          <div class="chat__msg-camera"></div>
+	        <form id="formmsg" class="chat__msg-form">
+	          <input type="usern" class="chat__msg-text" placeholder="Type message" name="usern" id="msg">
+	          <div class="chat__msg-button-wrap">
+	            <input type="button" name="send" id="send" value="" class="chat__msg-button">
+	          </div>
+	        </form>
+	      </div>
+	    </div>
+    </div>
+  </div>
+</body>
+</html>

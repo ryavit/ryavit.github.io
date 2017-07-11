@@ -1,0 +1,344 @@
+/*=====================================*/
+/*@media screen and (min-width: 1000px) {*/
+    html {
+        /*font-size: 14px;*/
+        /*font-size: 1.41vh;*/
+        font-size: 2vh;
+
+
+    }
+    body, html {
+        background: #ccc;
+        font-family: 'Karla', sans-serif;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    .container:before {
+        display: inline-block;
+        height: 50%;
+        vertical-align: middle;
+        content: "";
+    }
+    .chat {
+        width: 26.7857rem;
+        height: 47.6429rem;
+        position: relative;
+        margin: auto;
+        margin-top: -23.82145rem;
+        background-color: rgb(0, 160, 255);
+        border: 1px solid #fff;
+        overflow: hidden;
+    }
+    .chat__background {
+        position: absolute;
+        content: "";
+        z-index: 0;
+        opacity: .99;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 44.7429rem solid #0090e5; 
+        border-right: 44.7429rem solid transparent;  
+    }
+    .chat__header {
+        position: relative;
+        width: 100%;
+        height: 4.5714rem;
+        color: #fff;
+        background: #000;
+        z-index: 100;
+
+    }
+    .chat__name {
+        font-size: 1.2143rem;
+        text-align: center;
+        padding: 1.7857rem;
+        font-weight: 200;
+        margin: 0;
+    }
+    .chat__icon-wrap {
+        position: absolute;
+        width: 14.3571rem;
+        height: 15.0357rem;
+        top: 10.3571rem; 
+        left: 50%;
+        transform: translate(-50%,0);
+        z-index: 100;
+
+    }
+    .chat__icon {
+        width: 100%;
+        height: 100%;
+        background: url("img/icon.png");
+        background-size: 100%;
+    }
+
+    .chat__title {
+        font-size: 7.1429rem;
+        color: #fff;
+        position: absolute;
+        top: 4.1429rem;
+        margin: 0 0 0 -0.2143rem;
+        z-index: 101;
+    }
+    .chat__login {
+        position: absolute;
+        background: #fff;
+        width: 23.2143rem;
+        height: 19.2857rem;
+        bottom: 5rem;
+        left: 50%;
+        transform: translate(-50%,0);
+        z-index: 110;
+    }
+    .chat__login-footer {
+        position: absolute;
+        width: 23.2143rem;
+        height: 4.2857rem;
+        background: #00a0ff;
+        bottom: 0;
+        z-index: 110;
+
+    }
+    .chat__login-form {
+        position: relative;
+        width: 17.5rem;
+        height: 19.2857rem;
+        border: 1px solid transparent;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        z-index: 110;
+    }
+    .chat__login-label-username {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        font-size: 0.7143rem;
+        text-transform: uppercase;
+        color: #b38a88; 
+        width: 17.5rem;
+        margin-top: 3.5714rem;
+        z-index: 110;
+    }
+    .chat__login-form-name {
+        display: block;
+        position: absolute;
+        font-size: 1rem;
+        width: 17.5rem;
+        border: none;
+        left: 50%;
+        transform: translate(-50%,0);
+        border-bottom: 1px solid #b38a88;
+        margin-top: 0.7143rem;
+        padding-bottom: 0.7143rem;
+        outline: none;
+        z-index: 110;
+    }
+    
+    .chat__login-form-name::-webkit-input-placeholder { 
+        color: #000; 
+    }
+    .chat__login-form-name::-moz-placeholder { 
+        color: #000; 
+    }
+    .chat__login-form-name::placeholder { 
+        color: #000; 
+    }
+    
+    .chat__login-form-button {
+        position: absolute;
+        border: none;
+        width: 23.2143rem;
+        height: 4.2857rem;
+        bottom: 0;
+        z-index: 110;
+    }
+    .chat__login-button {
+        text-align: right;
+        background: none;
+        font-size: 1rem;
+        color: #fff;
+        border: none;
+        width: 17.5rem;
+        height: 4.2857rem;
+        bottom: 0;
+    }
+    .chat__login-footer-triangle {
+        position: absolute;
+        width: 0.7286rem;
+        height: 1.0143rem;
+        top: 16.5571rem;
+        left: 0rem;
+        background: url("img/triangle.png");
+        background-size: 100%; 
+        z-index: 110;       
+    }
+    .chat__footer-bg {
+        position: absolute;
+        height: 20.7143rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        z-index: 100;
+    }
+    .chat__msg-camera {
+        position: absolute;
+        width: 1.4286rem;
+        height: 1.2143rem;
+        top: 1.3571rem;
+        left: 1.6429rem;
+        background: url("img/icon_camera.png");
+        background-size: 100%;
+        z-index: 100;
+    }
+    .chat__msg-text {
+        position: absolute;
+        width: 14.2857rem;
+        height: 1.314rem;
+        top: 1.3571rem;
+        left: 4.6429rem;
+        font-size: 1rem;
+        color: #fff;
+        background: none;
+        border: none;
+        outline: none;
+        z-index: 100;
+    }
+    
+    .chat__msg-text::-webkit-input-placeholder { 
+        color: #fff; 
+    }
+    .chat__msg-text::-moz-placeholder { 
+        color: #fff; 
+        opacity: 1;
+        transition: opacity 250ms ease-in-out;
+    }
+    .chat__msg-text::placeholder { 
+        color: #fff; 
+    }
+    
+    .chat__msg-button-wrap {
+        position: absolute;
+        width: 6.4643rem;
+        height: 5.4929rem;
+        top: -2.05rem;
+        right: 1.7857rem;
+        z-index: 100;
+
+    }
+    .chat__msg-button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: url("img/button_bg.png");
+        background-size: 100%;
+    }
+    
+    .chat__content-clock {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: 1.2143rem;
+        height: 1.2143rem;
+        top: 1rem;
+        left: 9.2429rem;
+        background: url("img/icon_clock.png");
+        background-size: 100%;
+        z-index: 100;
+    }
+    .chat__content-time {
+        position: relative;
+        top: 0.7143rem;
+        left: 8.0143rem;
+        display: inline-block;
+        text-align: center;
+        font-size: 1rem;
+        color: #fff;
+        margin: 1.7857rem;
+        z-index: 100;
+    }
+    .chat__content-msg {
+        position: relative;
+        overflow: hidden;
+        width: 21.843rem;
+        margin: 0 0 0 1.7143rem;
+        padding: 0 0.914rem;
+        z-index: 100;
+    }
+    .chat__content-list {
+        width: 23.4286rem;
+        height: 28.5714rem;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+        overflow-y: scroll;
+        text-align: center;
+    }
+    .chat__content-list::-webkit-scrollbar { 
+        width: 0; 
+    }
+    
+    .chat__content-item {
+        display: inline-block;
+        width: 20.4286rem;
+        min-height: 3.5714rem;
+        background: #fff;
+        text-align: left;
+        list-style: none;
+        padding: 0.7143rem;
+        margin-bottom: 1.7857rem;
+        -webkit-box-shadow: 3px 4px 10px 0px rgba(50, 50, 50, 0.56);
+        -moz-box-shadow: 3px 4px 10px 0px rgba(50, 50, 50, 0.56);
+        box-shadow: 3px 4px 10px 0px rgba(50, 50, 50, 0.56);
+    }
+    .chat__content-item-msg {
+        font-size: 1.0714rem;
+        color: #000;
+        padding: 0.7143rem;
+    }
+    .chat__content-item-name {
+        font-size: 0.7143rem;
+        color: #b38a88;
+        text-align: right;
+        padding: 0.7143rem;
+    }
+/*}*/
+/*@media screen and (max-width: 992px) {*/
+    /*html {*/
+        /*font-size: 28px;*/
+        /*font-size: 2.82vw;*/
+
+    /*}*/
+/*}*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    html {
+        /*font-size: 14px;*/
+        /*font-size: 2.91vw;*/
+        font-size: 2.1vh;
+
+    }
+    .chat {
+        /*width: 26.7857rem;*/
+        max-width: 100%;
+        height: 47.6429rem;
+        position: relative;
+        margin: auto;
+        margin-top: -23.82145rem;
+        /*background: url("img/bg.png");*/
+        background: rgb(0, 160, 255);
+        border: 1px solid #fff;
+    }
+}
